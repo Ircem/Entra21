@@ -1,0 +1,38 @@
+
+    p { 
+        color: rgb(22, 218, 97);
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        
+    }
+    
+    table, td, th{
+        border: 1px solid rgb(25, 0, 255);
+        border-collapse: collapse;
+    }
+
+#oi {
+    background-color: aqua;
+}
+
+.minhaClasse {
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    border-style: dotted;
+}
+
+p.minhaClasse {
+    background-color: rgb(red, green, blue);
+}
+
+body {
+    margin: 30px;
+    
+}
+ol li{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul li {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

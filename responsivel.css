@@ -1,0 +1,55 @@
+header {
+  font-size: large;
+  color: aqua;
+}
+
+.dart {
+  font-size: 2vw;
+  width: 100%;
+  border: 1px solid black;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 15vw;
+  background-color: maroon;
+  margin-top: 5vw auto;
+  max-width: 700px;
+  text-align: center;
+  color: #d9ff00;
+  -webkit-transition: -webkit-transform 2s;
+  transition: -webkit-transform 2s;
+  transition: transform 2s;
+  transition: transform 2s, -webkit-transform 2s;
+}
+
+@media screen and (max-width: 600px) {
+  .dart {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    border-bottom-left-radius: 45%;
+    border-top-right-radius: 40%;
+    border-bottom-right-radius: 62px;
+    border-top-left-radius: 62px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .menuvertical {
+    display: block;
+  }
+  .menuorisoltal {
+    display: nome;
+  }
+}
+
+@media screen and (min-width: 390px) {
+  .menuvertical {
+    display: none;
+  }
+  .menuorisoltal {
+    display: block;
+  }
+}
+/*# sourceMappingURL=responsivel.css.map */

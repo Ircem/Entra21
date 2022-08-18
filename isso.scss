@@ -1,0 +1,46 @@
+$corprimaria: blue;
+.classe1{
+    background-color: corprimaria;
+}
+
+.paragrafo{
+    background-color: corprimaria;
+}
+
+button{
+    background-color: corprimaria;
+}
+
+nav{
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    padding-left: 1vw;
+    margin-bottom: 5vw;
+    background-color: rgb(71, 5, 255);
+    color: blue;
+
+
+a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: line-block;
+}
+
+a:hover{
+    text-decoration: line-block;
+}
+
+
+ li{
+    list-style: none;
+    padding-top: .5vw;
+    padding-bottom: .5vw;
+    display: inline-block;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+}

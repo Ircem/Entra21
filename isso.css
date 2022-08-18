@@ -1,0 +1,46 @@
+.classe1 {
+  background-color: corprimaria;
+}
+
+.paragrafo {
+  background-color: corprimaria;
+}
+
+button {
+  background-color: corprimaria;
+}
+
+nav {
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  padding-left: 1vw;
+  margin-bottom: 5vw;
+  background-color: #4705ff;
+  color: blue;
+}
+
+nav a {
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+nav a:hover {
+  -webkit-text-decoration: line-block;
+          text-decoration: line-block;
+}
+
+nav a:hover {
+  -webkit-text-decoration: line-block;
+          text-decoration: line-block;
+}
+
+nav li {
+  list-style: none;
+  padding-top: .5vw;
+  padding-bottom: .5vw;
+  display: inline-block;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+/*# sourceMappingURL=isso.css.map */
