@@ -1,0 +1,12 @@
+javascript
+
+o javascript pode introduzir infomação na pasta mesmo depois dela ja esta caregada 
+
+window.alert('hola mundo') = da uma mensagem de resposta na hora de entrar no saite 
+
+console.log('bolas mundo') = usado para arquivar os erros que podem dar na parte de web
+
+ document.write('<h1>olá Drogas <h1>') = introduz um texto na pagina e podemos obiservar que tem
+comando de Html usado para aumentar a fonte que sera mostrado  
+
+<script src="externo.js"></script> = usado para chamar o javascript para ser usado no html

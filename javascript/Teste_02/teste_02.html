@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>teste2</title>
+<style>
+header{
+    border-bottom: 1px solid black;
+}
+footer{
+    border-top: 1px solid black;
+    width: 100%;            
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+}
+.temaAzul{
+    color: rgb(4, 0, 255);
+    background-color: rgb(209, 209, 209);
+}
+.dark{
+    color: aliceblue;
+    background-color: black;
+}
+
+body{
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+
+</style>
+<script>
+function ativotemaAzul(){
+    document.getElementById('Principla').classList.add('temaAzul');
+}
+
+function normal(){
+    /*
+    vetElementos = document.getElementById
+    fro(i = 0, i < vetElementos.length; i++){
+        vetElementos[i].classList.add('temaAzul');
+        vetElementos[i].classList.remove('nomeal');
+        console.log(vetElementos[i])
+    }
+    */
+    document.body.classList.add('temaAzul')
+    
+}
+function altenar(){
+    document.body.classList.toggle('dark')
+}
+function ciraParagrafo(){
+const novoParagrafo = document.createElement("p");
+novoParagrafo.id = "novoParagrafo"
+novoParagrafo.style.fontFamily= "Verdana"
+novoParagrafo.innerHTML = "Novo paragrafo"
+document.getElementById("elemento").appendChild(novoParagrafo);
+}
+function InserirAntes(){
+const novoParagrafo = document.createElement("p")
+novoParagrafo.id = "AntesParagrafo"
+novoParagrafo.innerHTML = "O mais novo"
+document.getElementById("elemento").insertBefore(novoParagrafo,document.getElementById("novoParagrafo"));
+}
+function RemoveTudo(){  
+    /*document.getAnimations("elemento").removeChild(document.getElementById("novoParagrafo"))*/
+}
+function Trocado(){
+    const novoParagrafo = document.createElement("p");
+    novoParagrafo.innerHTML = "Substituido"
+    document.getElementById("elemento").replaceChild(novoParagrafo,document.getElementById("novoParagrafo"))
+}
+
+</script>
+</head>
+<body>
+<header>
+<h1 class="nomeal">
+        oi boneca
+</h1>
+</header >
+<div id="Principla" onmouseleave="document.getElementById('Principla').classList.add('nomeal')">
+Texto texto            
+
+</div>
+<button  onclick="normal()">ativar tema azul</button>
+<br>
+<button  onclick="altenar()">ativar tema normal</button>
+<br>
+<button onclick="ciraParagrafo()">Criar paragrafo</button>
+<button onclick="InserirAntes()">Cira uma antes</button>
+<button onclick="RemoveTudo()">Limpar</button>
+<button onclick="Trocado()">demitido</button>
+<div id="ciraparagrafo"></div>
+<div id="elemento"></div>
+<footer class="nomeal">
+Dudor 
+</footer>
+
+
+</body>
+</html>

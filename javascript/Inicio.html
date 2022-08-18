@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>inicio</title>
+<script src="externo.js"></script>    
+<link rel="stylesheet" href="teste.css">
+</head>
+<body>
+    <style>
+        button{
+            margin-bottom: 1vw;
+        }
+    </style>
+<script>
+window.alert("hola")
+console.log('bolas mundo')
+document.write('<h1 id="trocahola">olá leo <h1>')
+chamada()
+chamadaParametro(5)
+
+function ciraparagrafo(){
+    const novoParagrafo = document.createElement('p');
+    novoParagrafo.style.fontFamily='Verdana'
+    novoParagrafo.innerHTML = 'Novo paragrafo'
+    document.getElementById('novoParagrafo').appendChild(novoParagrafo)
+}
+function InserirAntes(){
+    const novoParagrafo = document.createElement("p")
+    novoParagrafo.innerHTML = "O mais novo"
+    document.getElementById("ciraparagrafo").appendChild(novoParagrafo)
+}
+</script>
+<p onmouseleave="document.getElementById('Troimagem').style.display='nome';" onmouseleave="document.getElementById('Troimagem').style.display='block'">
+    Sumiu
+</p>
+<div id="myDIV">
+<div id="content">oi meu nome é leonardo sou uma pessoa que gosta de viajar e de ajduar ....</div>
+</div>
+<button onclick="trocaestilo()">troca estilo</button>
+<button onclick="document.getElementById('trocahola').innerHTML='O mundo caio'">Troca paragrafo</button>
+<button onclick="document.getElementById('Troimagem').src='Img/tijolo.jpg'">Toca images</button>
+<button onclick="ciraparagrafo()">Criar paragrafo</button>
+<button onclick="InserirAntes()">Cira uma antes</button>
+<div id="Antesparagrafo"></div>
+<div id="ciraparagrafo"></div>
+<br>
+<img id="Troimagem" src="Img/parede.jpg" width="50%" onmouseover="document.getElementById('Troimagem').src='Img/parede.jpg'">
+
+<script >
+chamada()
+document.getElementById('trocahola').innerHTML="Alerta"
+</script>
+
+
+</body>
+</html>

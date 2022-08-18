@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <style>
+        table, td, th {
+            margin-left: 40%;            
+            border: 80px;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            height: 3vw;
+        }
+    </style>
+    <script>
+        function AddLinha(){
+            const col1 = document.createElement("tr");
+            const col2 = document.createElement("td");
+            const col3 = document.createElement("td");   
+            const col4 = document.createElement("td");         
+            col2.innerHTML = Math.floor(Math.random() * 1000);
+            col3.innerHTML = Math.floor(Math.random() * 1000);
+            col4.innerHTML = Math.floor(Math.random() * 1000);  
+            col1.appendChild(col2);
+            col1.appendChild(col3);
+            col1.appendChild(col4);               
+            document.getElementById("t1").appendChild(col1);
+         //   document.getElementById("t1").appendChild(col2);
+           // document.getElementById("t1").appendChild(col3);
+        }
+    </script>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela</title>
+</head>
+    
+
+<body>
+    <button onclick="AddLinha()">Adicionar linha</button>
+    <table id="t1">
+        <tr><th>col.1</th><th>col.2</th><th>col.3</th></tr>
+        <tr><td>info1</td><td>info.2</td><td>info.3</td></tr>
+    </table>
+</body>
+</html>
