@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        button{
+            margin-top: 2vw;
+            margin-left: 0.1vw;
+            text-align: center;
+        }
+        table, td, th {
+            margin-top: 40px;
+            margin-left: 40%;            
+            border: 80px;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            height: 3vw;
+            position: relative;
+        }
+    </style>
+    <script>
+        function div_dav(){
+            const col1 = document.getElementById('p')
+            col1.innerHTML = document.getElementById('Men').value
+            document.getElementById("Mesnsagem").appendChild(col1);
+
+        }
+        function div_div(){
+            const col1 = document.createElement('p')
+            col1.innerHTML = document.getElementById('Men').value
+            document.getElementById("Mesnsagem").appendChild(col1);
+
+        }
+        function calcula(){
+            
+        }
+        function AddLinha(){
+            const col1 = document.createElement("tr");            
+            const col2 = document.createElement("td");
+            const col3 = document.createElement("td");   
+            const col4 = document.createElement("td");         
+            col2.innerHTML = document.getElementById('tx1').value
+            col3.innerHTML = document.getElementById('tx2').value
+            col4.innerHTML = document.getElementById('tx3').value
+            col1.appendChild(col2);
+            col1.appendChild(col3);
+            col1.appendChild(col4);               
+            document.getElementById("t1").appendChild(col1);
+            document.getElementById('tx1').value = ''
+            document.getElementById('tx2').value = ''
+            document.getElementById('tx3').value = ''
+        }
+      
+    </script>
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="nome" style="color: black;" value="Marconhas">
+    <button onclick="alert('Ola, ' +document.getElementById('nome').value)"> Mostra</button>
+    <button onclick="document.getElementById('nome').value = ''"> apagar</button>
+
+    <input type="text" id="Men">
+    <button ondblclick="div_div()">Addicionar ao div</button>
+    <div id="Mesnsagem"></div>
+    <br>
+    <input type="text" id="Men" onkeyup='document.getElementById("Mesnsagem").append(value)'>
+    <button onclick="document.getElementById('Mesnsagem').value"> apagar</button>
+    <br>
+    <br>    
+    <br>
+    <div>
+        <input type="text" id="tx1">
+        <input type="text" id="tx2">
+        <input type="text" id="tx3">
+        <button onclick="AddLinha()">Adicionar linha</button>
+        <table id="t1">
+            <tr><th>col.1</th><th>col.2</th><th>col.3</th></tr>
+            <tr><td>info1</td><td>info.2</td><td>info.3</td></tr>
+        </table>
+    </div>
+
+</body>
+</html>
