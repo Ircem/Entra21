@@ -1,0 +1,18 @@
+Serializable - cria as colunas da tebalas 
+
+@Entity - para fazer a inportação da blibioteca para usar o banco de dados
+
+@GeneratedValue - o que estiver em baixo sera definido como chave primaria 
+ 
+como usar public class departamento implements Serializable {}
+
+
+usado o Spring como um backend que esta usado a dependecia JPA, o JPA trasfomas as infomação em
+sql entre outros, e trasfomas a mesma que vem do banco para  java.
+depois de cria a pasta que vai usar o @Entity devemos cria uma pasta para servir como inteface
+usado o @Repository e devemos fazemos public interface (DepartamentoRespository = nome do documento
+) extends JpaRepository<pasta que vai ser chamada,tipo da chave primaria>{} lembrado que vc presisa
+fazer a chave primaria na pasta que vai ser a extends da pasta primaria 
+
+Lembrete para usar direito todos os comando do Spring não esquesa de abaixar o Spring Tools 4 ou 
+a verção que vc usa no seu projeto 
