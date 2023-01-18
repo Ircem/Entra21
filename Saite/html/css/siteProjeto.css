@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+    
+}
+
+body{
+    font-family: 'Comfortaa', sans-serif;
+    background-color: white;
+    flex-direction: column;
+    
+    
+}
+.logo {
+  position: absolute;
+  max-width: 230px;
+  top: -123px;
+}
+.max {
+    height: 100px;
+}
+
+.homeh {
+  text-decoration: none;
+  
+
+}
+
+.homeh::after{
+  width: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  background: blue;
+  transition: width .3s;
+}
+.homeh:hover::after {
+  width: 100%;
+}
+
+
+header{
+    height: 10vh;
+    display: flex;
+    background-color: whitesmoke;
+    box-shadow: 0 0 1rem gray;
+    
+}
+ul{
+    display: flex;
+    margin: 36px;
+    margin-left: 300px;
+    
+    
+}
+li{
+    color: black;
+    list-style-type: none;
+    cursor: pointer;
+    padding-left: 2rem;
+    
+}
+ul li a{
+    color: black;
+}
+img{
+    width: 100%;
+    padding-top: 80px;
+   
+}
+.row > .column {
+    padding: 5 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+  } 
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(209, 222, 250);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+    
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  section:nth-child(odd), section:nth-child(even){
+    width: 100%;
+    height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font: 2rem;
+  }
+  section.home{
+   background-image: linear-gradient(to bottom,#79b8df, white);
+   height: 30%;
+   
+   
+       
+  }
+  section.contatosdeg{
+    background-image: linear-gradient(to top, #79b8df, white);
+  }
+  .contatosttl{
+    font-size: 45px;
+  text-align: center;
+  text-shadow: 2px 2px gray;
+  margin-top: -10%;
+  
+  }
+  
+  
+  /* Login */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Comfortaa', sans-serif;
+  }
+  
+  input, label {
+    display: block;
+    outline: none;
+    width: 100%;
+    
+  }
+  
+  a {
+    color: blue;
+    cursor: pointer;
+  }
+  
+  body {
+
+    background-image: url('../img/bg-register-page.jpg');
+    background-size: cover;
+    background-position-y: -150px;
+  }
+  
+  /* form */
+  #main-container {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFF;
+    border-radius: 10px;
+    padding: 25px;
+  }
+  
+  #main-container h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+  }
+  
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .full-box {
+    flex: 1 1 100%;
+    position: relative;
+    
+  }
+  
+  .half-box {
+    flex: 1 1 45%;
+    position: relative;
+  }
+  
+  .spacing {
+    margin-right: 2.5%;
+  }
+  
+  label {
+    font-weight: bold;
+    font-size: .8rem;
+  }
+  
+  input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+  }
+  
+  input:focus {
+    border-color: blue;
+  }
+  
+  input[type="submit"] {
+    background-color: blue;
+    color: #FFF;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+  }
+  
+  #agreement {
+    margin-right: 5px;
+  }
+  
+  #agreement, #agreement-label {
+    display: inline-block;
+    width: auto;
+  }
+  
+  .error-validation {
+    color: blue;
+    position: absolute;
+    top: 57px;
+    font-size: 12px;
+  }
+  
+  .template {
+    display: none;
+  }
+ .log {
+  padding: 14px 28px;
+  background-color: rgb(86, 139, 255);
+  font-weight: bold;
+ }
+ .reg {
+  padding: 14px 28px;
+  background-color: rgb(86, 139, 255);
+  font-weight: bold;
+ }
+
+span{
+  margin-right: auto;
+  margin-left: 30px;
+  font-size: large;
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+html,body{
+  display: grid;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  
+}
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+  
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icons{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+  
+}
+.wrapper .button:nth-child(1):hover .icons{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icons{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icons{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icons{
+  background: #333;
+}
+.wrapper .button .icons i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icons i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.input-icons i {
+  position: absolute;
+}
+
+.input-icons {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.icon{
+  padding: 10px; 
+  min-width: 40px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  text-align: justify;
+  padding-right: 30px;
+  padding-left: 30px;
+  
+}
+.fa-lock {
+  padding: 10px;
+  min-width: 40px;
+}
+.termos {
+  margin-top: 27px;
+}
+.textoHome {
+  margin-left: 750px;
+  text-align: left;
+  text-shadow: 3px 3px gray;
+  font-size: 54px;
+  margin-top: -10%;
+}
+.search-box {
+  position: absolute;
+  top: 34%;
+  left: 95%;
+  transform: translate(-80%, -20%);
+  background-color: cornflowerblue;
+  height: 40px;
+  padding: 10px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0px;
+  color: aliceblue;
+  font-size: 16px;
+  line-height: 20px;
+  width: 0;
+  transition: .6s;
+  margin-top: 39px;
+}
+
+.search-btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+.textosob{
+  text-align: left;
+  margin-left: 50%;
+  margin-bottom: 300px;
+  
+}
+.areaAzul {
+  width: 700px;
+  margin-top: -10%;
+  
+}
+.sobrenos{
+  font-size: x-large;
+  text-align: right;
+ 
+  
+  
+}
+.sobresub{
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 3px 3px gray;
+  margin-top: 400px;
+
+  
+}
+
+.sobreimg{
+  width: 500px;
+  margin-left: 10%;
+  
+
+}
+.textosob{
+  margin-left: 50%;
+  text-align: left;
+  margin-top: -15%;
+  
+}
+
+
+
+.sobreimg,.textosub{
+  display: flex; 
+  margin-top: 7%;
+  
+ 
+  
+}
+section.sobrenos {
+   background-image: linear-gradient(to bottom, #79b8df, white);
+}
+.projetos {
+  background-image: linear-gradient(to top, #79b8df, white);
+}
+section.info {
+  background-image: linear-gradient(to top, #79b8df, white);
+}
+
+.info {
+  font-size: 22px;
+  text-align: center;
+  
+  
+  
+}
+.infottl {
+  font-size: 45px;
+  text-align: center;
+  text-shadow: 2px 2px gray;
+ margin-bottom: 37px;
+
+}
+.aInsta{
+  color: #E1306C;
+}
+/*NavBar dece com a rolagem (leo)*/
+.Menu_seg {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; 
+  top: 0px; 
+  width: 100%; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+    
+    
+    
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+body{
+    background-color: #d7e1ec;
+    background-attachment: fixed;
+
+    color: black;
+    
+}
+
+form{
+    font-size: larger;
+    
+}
+input{
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid;
+    
+    
+    
+    
+    
+}
+img{
+    border-radius: 50%;
+    margin-left: 696px;
+    margin-top: 30px;
+    border: 3px solid;
+    width: 200px;
+    height: 200px;
+    
+}button {
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    font-size: large;
+    
+}
+.idade {
+    text-align: left;
+    margin-left: 28%;
+}
+p{
+    font-weight:bold;
+}
+.button {
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 0px;
+    margin-left: 472px;
+    margin-top: 60px;
+    background-color:  blue;
+    font-size: medium;
+    box-shadow: 0 0 1rem gray;
+    
+    
+}
+
+.editarFoto {
+    cursor: pointer;
+    border: 0px;
+    border-radius: 0px;
+    margin-left: 0px;
+    margin-top: 60px;
+    background-color:  rgb(196, 203, 245);
+    font-size: medium;
+    max-width: 100px;
+    font-size: small;
+}
+#fundoeditar {
+        width: 540px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: #FFF;
+          border-radius: 10px;
+          padding: 25px;
+      }
+.editarFoto2 {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 2px;
+    cursor: pointer;
+    
+}
+
+

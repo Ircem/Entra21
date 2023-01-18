@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Veiculo</title>
+    <script src="Script/Enviar.js"></script>
+    <script src="Script/Logar.js"></script>
+    <link rel="stylesheet" href="css/telaLogin.css">
+    <link rel="stylesheet" href="css/editarPerfil.css">
+    <link autoplay rel="icon" href="img/giphy.webp" type="image/webp">
+</head>
+<body>
+    
+        
+        
+        <h1>Cadastrar Carro</h1>
+        <form action="" method="GET" class="idade" id="cadastro">
+            <table>            
+            <tr>
+                <td><label class="modeloVc" for="modelo"><strong>Modelo do veículo:</strong></label></td>
+                <td><input type="text" name="modelo" id="ModeloCar_Cadas"></td>
+            </tr>
+
+            <tr>
+                <td><label class="placaVc" for="placa"><strong>Placa do veículo:</strong></label></td>
+                <td><input type="text" name="placa" size="20" id="PlacaCar_Cadas"></td>
+            </tr>
+            <tr>
+                <td><label class="anoCarro" for="AnoCar"><strong>Ano do Carro:</strong></label></td>
+                <td><input type="text" name="alterarSenha" size="30" id="AnoCar_Cadas"></td>
+            </tr>         
+            
+        </table>    
+        </form>
+        <a href="perfilSite.html" style="margin-left: 400px;"><button class="butao"><span>Voltar</span></button></a>        
+        <a href="perfilSite.html" style="margin-left: 200px;"><button onclick="enviar_Rcpleta()" class="butao"><span>Confirmar</span></button></a> 
+        <div class="lateral_mp">        
+            <a href="editarPerfil.html">Editar Perfil</a>
+            <br>
+            <a href="cadastrar_carro.html">Cadastrar veiculo</a>
+            <br>
+            <a href="Cronometro.html">Veículo Cadastrados</a>
+    
+        </div>
+        
+
+
+</body>
+</html>

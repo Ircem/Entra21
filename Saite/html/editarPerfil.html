@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css/editarPerfil.css">
+    <script src="Script/Enviar.js"></script>
+    <script src="Script/BuscarCar.js"></script>
+    <script src="Script/Enviar.js"></script>
+    <script src="Script/Logar.js"></script>
+    <script src="Script/Script_Log.js"></script>
+</head>
+
+<body>
+
+
+    <img src="img/foto de perfil 1.webp">
+    <label for="editarFoto" class="editarFoto2">Editar foto</label>
+    <input id="editarFoto" type="file" style="visibility: hidden;" class="editarFoto"></input>
+    <h1>Editar perfil</h1>
+    <form action="" method="GET" class="idade">
+        <table>
+            <tr>
+                <td><label for="nmPessoa"><strong>Nome:</strong></label></td>
+                <td><input type="text" id="nmPessoa" name="nmPessoa" size="40" maxlength="20"></td>
+            </tr>
+            <tr>
+                <td><label for="sbPessoa"><strong>Sobrenome:</strong></label></td>
+                <td><input type="text" nm="sbPessoa" size="40" maxlength="20" class="sbPessoa" id="smPessoa_Edit"> </td>
+            </tr>
+            <tr>
+                <td><label for="idade"><strong>Idade:</strong></label></td>
+                <td><input type="text" name="idade" min="10" max="50" id="idadePessoa_Edit"></td>
+            </tr>
+
+
+            <tr>
+
+                <td><strong>Sexo:</strong></td>
+                <td><label for="flAceita"><strong>Masculino</strong></label>
+                    <input type="radio" id="flAceita" name="flAceita" value="S">
+
+                    <label for="flAceita"><strong>Feminino</strong></label>
+                    <input type="radio" id="flAceita" name="flAceita" value="S">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="eMail"><strong>E-mail:</strong></label></td>
+                <td><input type="text" name="eEMail" size="40" id="Email_Edit"></td>
+            </tr>
+            <tr>
+                <td><label for="AuterarSenha"><strong>Auterar senha:</strong></label></td>
+                <td><input type="text" name="AuterarSenha" size="30" id="senha_Edit"></td>
+            </tr>
+            <tr>
+                <td><label for="confirmarSenha"><strong>Confirmar senha:</strong></label></td>
+                <td><input type="text" name="confirmarSenha" size="30" id="SenhaComfimar_Edit"></td>
+            </tr>
+
+        </table>
+    </form>
+    <br>
+    <a href="perfilSite.html" style="margin-left: 500px;"><button class="butao"><span>Voltar</span></button></a>
+    <a href="perfilSite.html" style="margin-left: 200px;"><button onclick="Autera_Pessoa()" class="butao"><span>Confirmar</span></button></a> 
+    </a>
+    <div class="lateral_mp">
+        <a href="editarPerfil.html">Editar Perfil</a>
+        <br>
+        <a href="cadastrar_carro.html">Cadastrar veiculo</a>
+        <br>
+        <a href="Cronometro.html">Veículo Cadastrados</a>
+
+    </div>
+
+
+</body>
+
+</html>

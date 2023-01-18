@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    
+    
+    
+    
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+
+body{
+    background-color: #d7e1ec;
+    background-attachment: fixed;
+
+    color: black;
+    
+}
+
+form{
+    font-size: larger;
+    
+}
+input{
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid;
+    
+    
+    
+    
+    
+}
+img{
+    border-radius: 50%;
+    margin-left: 587px;
+    margin-top: 30px;
+    border: 3px solid;
+    width: 200px;
+    height: 200px;
+    
+}button {
+    border-radius: 30px;
+    width: 100px;
+    height: 30px;
+    font-size: large;
+    
+}
+.idade {
+    text-align: left;
+    margin-left: 28%;
+}
+p{
+    font-weight:bold;
+}
+.button {
+    color: white;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 0px;
+    margin-left: 472px;
+    margin-top: 60px;
+    background-color:  blue;
+    font-size: medium;
+    box-shadow: 0 0 1rem gray;
+    
+    
+}
+
+.editarFoto {
+    cursor: pointer;
+    border: 0px;
+    border-radius: 0px;
+    margin-left: 0px;
+    margin-top: 60px;
+    background-color:  rgb(196, 203, 245);
+    font-size: medium;
+    max-width: 100px;
+    font-size: small;
+}
+#fundoeditar {
+        width: 540px;
+          margin-left: auto;
+          margin-right: auto;
+          background-color: #FFF;
+          border-radius: 10px;
+          padding: 25px;
+      }
+.editarFoto2 {
+    border: 1px solid black;
+    border-radius: 2px;
+    padding: 2px;
+    cursor: pointer;
+    
+}
+
+/* menu lateral perfil */
+.lateral_mp {
+    height: 100%; 
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #1f99c9; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+  }
+  
+  
+  .lateral_mp a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+  }
+  
+  
+  .lateral_mp a:hover {
+    color: #494949;
+  }
+  
+  
+  .main {
+    margin-left: 160px;
+    padding: 0px 10px;
+  }
+  
+  
+  @media screen and (max-height: 450px) {
+    .lateral_mp {padding-top: 15px;}
+    .lateral_mp a {font-size: 18px;}
+  }
+  
+  /* botão animação */
+  .butao {
+    border-radius: 22px;
+    background-color: #00c3ff;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .butao span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+
+  .butao span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .butao:hover span {
+    padding-right: 25px;
+  }
+  
+  .butao:hover span:after {
+    opacity: 1;
+    right: 0;
+   
+  }

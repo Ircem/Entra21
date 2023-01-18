@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pessoa</title>
+    <link rel="stylesheet" href="css/paginaNome.css">
+    <script src="Script/BuscarCar.js"></script>
+    <script src="Script/Logar.js"></script>
+    <script src="Script/Enviar.js"></script>
+    <script src="Script/Cronometro.js"></script>
+    <link rel="stylesheet" href="css/Cronometro.css">    
+</head>
+<body>
+    <img src="img/VGblu1_2.png" alt="" class="logo"></img>
+    <form id="fundoPerfil"action="" method="GET" class="fundoPerfil">
+        <table id="Recebe_Cro">
+        </table>
+        <div class="fundoPerfil">
+            <br>
+            Digite a Placa do veiculo para localizar
+            <br>
+            <input type="text" placeholder="Placa" id="Placa_pesquisa">
+            <br>
+        </div>
+        <br>
+        <input style="display: none; margin-left: 43%;"  type="text"  id="Placa_pesquisa" placeholder="Placa do veiculo"></input>
+        
+        </form>
+        <br>
+        
+        <br>
+        <a href="perfilSite.html" style="margin-left: 400px;"><button class="butao"><span>Voltar</span></button></a>
+        <a href="Tempo.html" style="margin-left: 300px;" onclick="salvaPLaca()" id="Cronometro_com"><button class="butao"><span>Consutar</span></button></a>
+         
+</body>
+<script>
+      function salvaPLaca(){
+        localStorage.setItem('Placa_pesquisa',JSON.stringify(document.getElementById('Placa_pesquisa').value));
+        Buscar_Placa()
+              
+    }
+    Procura()
+  
+</script>
+<div class="lateral_mp">        
+    <a href="editarPerfil.html">Editar Perfil</a>
+    <br>
+    <a href="cadastrar_carro.html">Cadastrar veiculo</a>
+    <br>
+    <a href="Cronometro.html">Veículo Cadastrados</a>
+
+</div>
+</html>

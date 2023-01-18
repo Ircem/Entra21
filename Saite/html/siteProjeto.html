@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGBlu</title>
+    <link rel="stylesheet" href="css/siteProjeto.css">
+    <script src="Script/BuscarCar.js"></script>
+    <script src="Script/Enviar.js"></script>
+    <script src="Script/Logar.js"></script>
+    <script src="Script/Script_Log.js"></script>   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+  <div class="Menu_seg">
+    <header class="max">
+        <a href="siteProjeto.html"><img src="img/VGblu1.png" class="logo"></a>
+        <nav>
+        <ul class="headNomes">
+            
+            <li class="btn login" id="log_sum"><a onclick="document.getElementById('login').style.display='block'" style="width:auto;" class="log" >Login</a></li>
+            <li  class="btn registro" id="res_sum"><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;" class="reg" >Registro</a></li>
+            <li><a href="#home" class="homeh">Home</a></li>
+            <li><a href="#informacoes" class="homeh">Informações</a></li>
+            <li><a href="#sobreNos" class="homeh">Sobre nós</a></li>
+            <li><a href="#contatos" class="homeh">Contatos</a></li>
+            <li id="Perfil" style="display: none;"><a href="perfilSite.html" class="homeh" >Perfil</a></li>            
+            <li id="Sair" style="display: none;"><a href="siteProjeto.html" class="homeh" onclick="Saircoocke()">Sair</a></li>
+            <li><div class="search-box">
+              <input class="search-txt" type="text" name="" id="NamePerson" placeholder="Placa do veiculo">
+            <a class="search-btn" onclick="salvarPes()" href="paginaNome.html" > 
+                <i class="fas fa-search"></i>
+              </a>
+              
+            </div></li>
+            
+        </ul>
+    </nav>
+    </header>
+  </div>
+    <!-- Images used to open the lightbox -->
+<div class="row">
+    <div class="column">
+      <img src="img/carroEstacionado1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img/carroEstacionado2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img/carroEstacionado3editada.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+    </div>
+    <div class="column">
+      <img src="img/carroEstacionado4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img/proj1.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img/proj2.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img/proj3.jpg" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img/proj4.jpg" style="width:100%">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+  
+      <!-- Thumbnail image controls -->
+      <div class="column">
+        <img class="demo" src="img/proj1.jpg" onclick="currentSlide(1)" alt="ale1">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img/proj2.jpg" onclick="currentSlide(2)" alt="ale2">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img/proj3.jpg" onclick="currentSlide(3)" alt="ale3">
+      </div>
+  
+      <div class="column">
+        <img class="demo" src="img/proj4.jpg" onclick="currentSlide(4)" alt="ale4">
+      </div>
+    </div>
+  </div>
+  
+
+  <div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Fechar">&times;</span>
+  <div id="main-container">
+    <h1>Cadastre-se para acessar o sistema</h1>
+    <form id="register-form" action="">
+      <div class="full-box">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email_res" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+      </div>
+      <div class="half-box spacing">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name_res" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+      </div>
+      <div class="half-box">
+          <label for="lastname">Sobrenome</label>
+          <input type="text" name="lastname" id="lastname_res" placeholder="Digite seu sobrenome" data-required data-only-letters>
+      </div>
+      <div class="half-box spacing">
+        <label for="lastname">Senha</label>
+        <input type="password" name="password" id="password_res" placeholder="Digite sua senha" data-password-validate data-required>
+      </div>
+      <div class="half-box">
+        <label for="passconfirmation">Confirmação de senha</label>
+        <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
+      </div>      
+      <div>
+        <input type="checkbox" name="agreement" id="agreement" class="termos">
+        <label for="agreement" id="agreement-label">Eu li e aceito os <a href="">termos de uso</a></label>
+      </div>
+      <div class="full-box">
+        <input id="btn-submit" type="submit" value="Registrar" onclick="enviar_log()">
+      </div>
+    </form>
+  </div>
+  </div>
+  <!--Login-->
+<div id="login" class="modal">
+  <span onclick="document.getElementById('login').style.display='none'" class="close" title="Fechar">&times;</span>
+  <div id="main-container">
+    <h1>Login</h1>
+    <form id="register-form">
+        <div class="full-box">
+            <label for="email spacing">E-mail</label>
+            <div class="input-icons">
+              <i class="fa fa-user icon"></i>
+            <input autofocus="true" class="input-field" type="email" name="email" id="email_log" placeholder="Digite o seu e-mail" data-min-length="3">
+        </div>
+        <div class="full-box">
+            <label for="password spacing">Senha</label>
+            <div class="input-icons">
+              <i class="fa fa-user fa-lock"></i>
+            <input class="input-field" type="password" name="password" id="password_log" placeholder="Digite a sua senha">
+        </div>
+        <div class="full-box">
+            <label>Ainda não possui uma <a  onclick="document.getElementById('id01').style.display='block',document.getElementById('login').style.display='none'"    style="width:auto;">conta</a></label>
+        </div>
+        <br>
+        <div class="full-box">
+            <label>Continuar sem <a onclick="document.getElementById('login').style.display='none'" class=".close">conta</a></label>
+        </div>
+        <br>
+        <div class="full-box">
+            <input type="submit" id="btn-submit" value="Login" onclick="logar()">
+        </div>
+    </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+
+    
+
+<main>
+  
+    <section id="home" class="home">
+      <div class="inicial">
+        <img src="img/AreaAzul Imagem.png" class="areaAzul">
+      <p class="textoHome">Em busca de uma melhor <span style="color: rgb(0, 162, 255); font-size: 54px; text-align: left;" ><br>área azul</span> no Brasil!</p>
+    </div>
+    </section>
+    
+    <section id="informacoes" class="info"><h2 class="infottl">Informações</h2><br>
+      <p>A VGblu trabalha com o sistema de vagas gratuítas, onde que o único requesito é fazer o cadastro do propretário e do veículo.</p><br>
+      <p>Tempo de uso da sua área azul: 1 hora por veículo.</p><br>
+      <p>Posso deixar meu carro mais de 1 hora na mesma vaga?</p>
+      <p>Não, você terá que esperar 3 minutos para poder usar o nosso programa com o veículo que já foi usado.</p><br>
+      <p>Eu posso registar mais de 1 veículo?</p>
+      <p>Você pode. Pois nosso trabalho é facilitar o estacionamento em Blumenau.</p><br><br>
+      <p>Para mais informações acesse nossos contatos!</p>
+      
+    </section>
+    <section id="sobreNos" class="sobrenos">
+      <div>
+      <h2 class="sobresub">Sobre nós</h2>
+      
+      <div >
+      <img src="img/VGblu1_2.png" class="sobreimg" >
+      
+      <p class="textosob">A VGblu é um sistemas onde você se registra para ter acesso as áreas azuis de Blumenau. Estacionar seu veículo em Blumenau ficou mais fácil, 
+        com apenas um clique em seu celular você podera usar a área azul sem cobrança.  
+        Começando agora no mercado prometemos fazer você não gastar muito do seu tempo 
+        para estacionar o seu veículo pelas ruas de Blumenau, apenas entrar no site se registrar e desfrutar.</p>
+      </div>
+      
+    </section>
+    <section id="contatos" class="contatosdeg"><h2 class="contatosttl">Contatos</h2><br><br>
+      <div class="wrapper">
+        <div class="button">
+           <div class="icons">
+              <i class="fab fa-facebook-f"></i>
+           </div>
+           <span>Facebook</span>
+        </div>
+        <div class="button">
+           <div class="icons">
+              <i class="fab fa-twitter"></i>
+           </div>
+           <span>Twitter</span>
+        </div>
+        <div class="button">
+           <div class="icons">
+              <i class="fab fa-instagram"></i>
+           </div>
+           <span><a class="aInsta" href="https://www.instagram.com/guihoegen/">Instagram</a></span>
+        </div>
+          <div class="button">
+            <div class="icons">
+               <i class="fa fa-envelope"></i>
+            </div>
+            <span>E-mail</span>
+            </div>
+            
+            
+            
+    </section>
+  </main>
+  <script>
+    logado_log()
+    function salvarPes(){
+      localStorage.setItem('Procura_nv',JSON.stringify(document.getElementById('NamePerson').value));
+      Procura_pessoa()
+    }
+  </script>
+</body>
+</html>

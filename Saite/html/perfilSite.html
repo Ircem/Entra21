@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="css/perfilProjeto.css">
+    <script src="Script/Enviar.js"></script>
+    <script src="Script/Logar.js"></script>
+</head>
+
+<body>
+    <a href="siteProjeto.html" style="margin-left: 160px;"><button class="butao"><span>Voltar</span></button></a>
+    <br>
+
+    <img src="img/foto de perfil 1.webp">
+    <h1>Perfil</h1>
+    <form id="fundoeditar" action="" method="GET" class="idade">
+        <table>
+            <tr id="Rnm_pessoa">
+                <td><label for="nmPessoa"><strong>Nome:</strong></label></td>
+
+            </tr>
+            <tr id="sbPessoa">
+                <td><label for="sbPessoa"><strong>Sobrenome:</strong></label></td>
+
+            </tr>
+            <tr id="Idade_pessoa">
+                <td><label for="idade"><strong>Idade:</strong></label></td>
+
+            </tr>
+
+
+            <tr id="">
+
+                <td><strong>Sexo:</strong></td>
+                <td><label for="flAceita"><strong>Masculino</strong></label>
+                    <input type="radio" id="flAceita" name="flAceita" value="S">
+
+                    <label for="flAceita"><strong>Feminino</strong></label>
+                    <input type="radio" id="flAceita" name="flAceita" value="S">
+                </td>
+            </tr>
+
+            <tr id="E-mail_pf">
+                <td><label for="eMail"><strong>E-mail:</strong></label></td>
+
+            </tr>
+
+            
+            <!--
+            <tr>
+                <td><label for="qrCode"><strong>QRcode:</strong></label></td>
+            </tr>
+            -->
+        </table>
+    </form>
+    <div class="lateral_mp">
+        
+        <a href="editarPerfil.html">Editar Perfil</a>
+        <br>
+        <a href="cadastrar_carro.html">Cadastrar veiculo</a>
+        <br>
+        <a href="Cronometro.html">Veículo Cadastrados</a>
+
+    </div>
+
+
+
+    <script>
+        Retonar_Rcom()
+        Retonar_Pessoa()
+    </script>
+</body>
+
+</html>
